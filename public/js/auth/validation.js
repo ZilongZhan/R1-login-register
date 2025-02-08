@@ -10,7 +10,7 @@ export const isValidUsername = (username) => {
 export const isValidPassword = (password) => {
   let isValid;
   const minPasswordLength = 8;
-  const hasUppercaseLetters = /[A-Z]/;
+  const hasUppercaseLetters = /([A-Z]|[À-Ü])/;
   const hasNumbers = /[0-9]/;
 
   isValid =
