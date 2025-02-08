@@ -3,17 +3,10 @@ export const checkCredentials = (username, password) => {
   const storedPassword = localStorage.getItem("password");
 
   let areValidCredentials;
+  const isCorrectUsername = username === storedUsername;
+  const isCorrectPassword = password === storedPassword;
 
-  // Incluye aquí tu implementación para validar las credenciales
-  // Tienes a tu disposición una variable llamada username y otra llamada password
-  // que contienen el nombre de usuario y la contraseña que el usuario ha introducido
-  //
-  // También tienes dos variables llamadas storedUsername y storedPassword
-  // que contienen el nombre de usuario y contraseña almacenados
-  //
-  // La variable areValidCredentials debe apuntar a true o a false
-  //
-  // Recuerda borrar estos comentarios
+  areValidCredentials = isCorrectUsername && isCorrectPassword;
 
   return areValidCredentials;
 };
